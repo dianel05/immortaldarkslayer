@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immortal Dark Slayer - Epic Fantasy Action RPG | Play Now</title>
-    <meta name="description" content="Embark on an epic journey as the Immortal Dark Slayer. Battle hordes of demons and undead in this action-packed fantasy RPG. Play for free online now!">
-    <link rel="canonical" href="https://immortaldarkslayer.com">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="description" content="Play Immortal Dark Slayer online - an epic action RPG where you fight against darkness to save the realm. Experience intense battles and powerful abilities!">
+    <meta name="keywords" content="Immortal Dark Slayer, action RPG, online game, dark fantasy, slayer game">
+    <title>Immortal Dark Slayer - Epic Action RPG Game | Play Online</title>
+    <link rel="canonical" href="https://immortaldarkslayer.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            blue: '#0071e3',
+                            darkblue: '#0077ED',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --apple-blue: #007AFF;
-            --apple-gray: #8E8E93;
-            --apple-black: #1D1D1F;
-            --apple-white: #F5F5F7;
-            --apple-red: #FF3B30;
-        }
-        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: var(--apple-black);
-            color: var(--apple-white);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #000000 0%, #1D1D1F 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
         
         .game-container {
+            position: relative;
+            width: 100%;
             height: 0;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            position: relative;
             overflow: hidden;
-            background: #000;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
         
         .game-container iframe {
@@ -42,281 +44,283 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 12px;
+            border: none;
         }
         
-        .button-primary {
-            background-color: var(--apple-blue);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
+        /* Hide CrazyGames elements */
+        .game-container iframe {
+            opacity: 1;
         }
         
-        .button-primary:hover {
-            background-color: #0062CC;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
-        }
-        
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        @media (max-width: 640px) {
-            .game-container {
-                padding-bottom: 75%; /* Adjust aspect ratio for mobile */
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 2rem 1rem;
             }
-        }
-        
-        /* Custom styles to remove CrazyGames elements */
-        iframe {
-            border: none !important;
         }
     </style>
 </head>
-<body>
+<body class="bg-apple-gray text-apple-black">
     <!-- Header -->
-    <header class="py-4 md:py-6 px-4 md:px-8 lg:px-16 hero-gradient">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMEMxNC40NzcgMCA5LjE5OSAyLjE5MiA1LjYwNyA2LjA5NEMyLjAxNCA5Ljk5NiAwIDE1LjY4NiAwIDIxLjY0NEMwIDI3LjYwMyAyLjAxNCAzMy4yOTIgNS42MDcgMzcuMTk0QzkuMTk5IDQxLjA5NiAxNC40NzcgNDMuMjg4IDIwIDQzLjI4OEMyNS41MjMgNDMuMjg4IDMwLjgwMSA0MS4wOTYgMzQuMzkzIDM3LjE5NEMzNy45ODYgMzMuMjkyIDQwIDI3LjYwMyA0MCAyMS42NDRDNDAgMTUuNjg2IDM3Ljk4NiA5Ljk5NiAzNC4zOTMgNi4wOTRDMzAuODAxIDIuMTkyIDI1LjUyMyAwIDIwIDBaIiBmaWxsPSIjMDA3QUZGIi8+PHBhdGggZD0iTTI2LjY2NyAyMS42NDRMMTMuMzMzIDMwLjMwMlYxMi45ODdMMjYuNjY3IDIxLjY0NFoiIGZpbGw9IndoaXRlIi8+PC9zdmc+" alt="Logo" class="w-10 h-10">
-                <span class="ml-3 text-xl md:text-2xl font-bold text-white">Immortal Dark Slayer</span>
+    <header class="bg-black py-6 px-4 md:px-8 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-white">
+                <h1 class="text-2xl md:text-4xl font-bold">Immortal Dark Slayer</h1>
+                <p class="text-sm md:text-base mt-1 text-gray-300">Embrace the darkness, become the ultimate slayer</p>
             </div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#game" class="text-gray-300 hover:text-white transition">Play Now</a>
-                <a href="#features" class="text-gray-300 hover:text-white transition">Features</a>
-                <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+            <nav>
+                <ul class="flex space-x-6 text-white">
+                    <li><a href="#game" class="hover:text-apple-blue transition">Play Now</a></li>
+                    <li><a href="#about" class="hover:text-apple-blue transition">About</a></li>
+                    <li><a href="#features" class="hover:text-apple-blue transition">Features</a></li>
+                </ul>
             </nav>
-            <button class="md:hidden text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-gradient py-12 md:py-20 px-4 md:px-8 lg:px-16">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-                        Become the Immortal Dark Slayer
-                    </h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-8">
-                        Embark on an epic journey to vanquish the forces of darkness in this action-packed fantasy RPG.
-                    </p>
-                    <a href="#game" class="button-primary inline-block">
-                        Play Now
-                    </a>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDgwMCA0NTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0NTAiIGZpbGw9IiMxMjEyMTIiLz48cGF0aCBkPSJNNDAwIDEyNUMzNzMuNDc5IDEyNSAzNDcuNTg3IDEzMi4wMDkgMzI1LjU1NSAxNDUuNTAxQzMwMy41MjMgMTU4Ljk5MyAyODYuMzY2IDE3OC4zMDQgMjc2LjA1NyAyMDAuOTAzQzI2NS43NDcgMjIzLjUwMSAyNjIuNzM5IDI0OC4xNDQgMjY3LjMyNiAyNzIuMDQ0QzI3MS45MTMgMjk1Ljk0MyAyODMuODY2IDMxNy43NTMgMzAxLjcxNiAzMzUuMDAzQzMxOS41NjcgMzUyLjI1MyAzNDIuMDk0IDM2My44MTEgMzY2Ljc1NSAzNjguMjI5QzM5MS40MTYgMzcyLjY0NyA0MTYuODU1IDM2OS43MSA0NDAuMTYgMzU5Ljc1MkM0NjMuNDY1IDM0OS43OTQgNDgzLjM3MSAzMzMuMTgzIDQ5Ny4zMDMgMzExLjgwM0M1MTEuMjM0IDI5MC40MjMgNTE4LjQ5OSAyNjUuMjg2IDUxOC40OTkgMjM5LjVDNTE4LjQ5OSAyMDUuMzM5IDUwNC44MjUgMTcyLjYyNSA0ODAuMjgzIDE0OC45OTdDNDU1Ljc0MSAxMjUuMzcgNDIyLjQ1OCAxMTIgMzg4LjQ5OSAxMTJMNDAwIDEyNVoiIGZpbGw9IiMwMDdBRkYiLz48cGF0aCBkPSJNMzYxLjg2NCAyMjUuNzk5TDM2MS44NjQgMjQ3Ljc5OUwzMjUuMTk4IDI0Ny43OTlMMzI1LjE5OCAzMjcuNzk5TDMwMy4xOTggMzI3Ljc5OUwzMDMuMTk4IDE0Ny43OTlMMzYxLjg2NCAxNDcuNzk5QzM3My44NjQgMTQ3Ljc5OSAzODMuMTk4IDE1MS4xMzMgMzg5Ljg2NCAxNTcuNzk5QzM5Ni41MzEgMTY0LjQ2NiAzOTkuODY0IDE3My43OTkgMzk5Ljg2NCAxODUuNzk5QzM5OS44NjQgMTk3Ljc5OSAzOTYuNTMxIDIwNy4xMzMgMzg5Ljg2NCAyMTMuNzk5QzM4My4xOTggMjIwLjQ2NiAzNzMuODY0IDIyMy43OTkgMzYxLjg2NCAyMjMuNzk5VjIyNS43OTlaTTMyNS4xOTggMTY5Ljc5OVYyMjUuNzk5SDM2MS44NjRDMzY3Ljg2NCAyMjUuNzk5IDM3Mi41MzEgMjIzLjc5OSAzNzUuODY0IDIxOS43OTlDMzc5LjE5OCAyMTUuNzk5IDM4MC44NjQgMjEwLjQ2NiAzODAuODY0IDIwMy43OTlDMzgwLjg2NCAxOTcuMTMzIDM3OS4xOTggMTkxLjc5OSAzNzUuODY0IDE4Ny43OTlDMzcyLjUzMSAxODMuNzk5IDM2Ny44NjQgMTgxLjc5OSAzNjEuODY0IDE4MS43OTlIMzI1LjE5OFYxNjkuNzk5WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNDk2LjEzMSAyMzUuNzk5QzQ5Ni4xMzEgMjUxLjc5OSA0OTIuNzk4IDI2NS43OTkgNDg2LjEzMSAyNzcuNzk5QzQ3OS40NjUgMjg5Ljc5OSA0NzAuMTMxIDI5OS4xMzMgNDU4LjEzMSAzMDUuNzk5QzQ0Ni4xMzEgMzEyLjQ2NiA0MzIuNzk4IDMxNS43OTkgNDE4LjEzMSAzMTUuNzk5QzQwMy40NjUgMzE1Ljc5OSAzOTAuMTMxIDMxMi40NjYgMzc4LjEzMSAzMDUuNzk5QzM2Ni4xMzEgMjk5LjEzMyAzNTYuNzk4IDI4OS43OTkgMzUwLjEzMSAyNzcuNzk5QzM0My40NjUgMjY1Ljc5OSAzNDAuMTMxIDI1MS43OTkgMzQwLjEzMSAyMzUuNzk5QzM0MC4xMzEgMjE5Ljc5OSAzNDMuNDY1IDIwNS43OTkgMzUwLjEzMSAxOTMuNzk5QzM1Ni43OTggMTgxLjc5OSAzNjYuMTMxIDE3Mi40NjYgMzc4LjEzMSAxNjUuNzk5QzM5MC4xMzEgMTU5LjEzMyA0MDMuNDY1IDE1NS43OTkgNDE4LjEzMSAxNTUuNzk5QzQzMi43OTggMTU1Ljc5OSA0NDYuMTMxIDE1OS4xMzMgNDU4LjEzMSAxNjUuNzk5QzQ3MC4xMzEgMTcyLjQ2NiA0NzkuNDY1IDE4MS43OTkgNDg2LjEzMSAxOTMuNzk5QzQ5Mi43OTggMjA1Ljc5OSA0OTYuMTMxIDIxOS43OTkgNDk2LjEzMSAyMzUuNzk5Wk00NzYuMTMxIDIzNS43OTlDNDc2LjEzMSAyMjMuNzk5IDQ3My40NjUgMjEzLjEzMyA0NjguMTMxIDIwMy43OTlDNDYyLjc5OCAxOTQuNDY2IDQ1NS40NjUgMTg3LjEzMyA0NDYuMTMxIDE4MS43OTlDNDM2Ljc5OCAxNzYuNDY2IDQyNy40NjUgMTczLjc5OSA0MTguMTMxIDE3My43OTlDNDA4Ljc5OCAxNzMuNzk5IDM5OS40NjUgMTc2LjQ2NiAzOTAuMTMxIDE4MS43OTlDMzgwLjc5OCAxODcuMTMzIDM3My40NjUgMTk0LjQ2NiAzNjguMTMxIDIwMy43OTlDMzYyLjc5OCAyMTMuMTMzIDM2MC4xMzEgMjIzLjc5OSAzNjAuMTMxIDIzNS43OTlDMzYwLjEzMSAyNDcuNzk5IDM2Mi43OTggMjU4LjQ2NiAzNjguMTMxIDI2Ny43OTlDMzczLjQ2NSAyNzcuMTMzIDM4MC43OTggMjg0LjQ2NiAzOTAuMTMxIDI4OS43OTlDMzk5LjQ2NSAyOTUuMTMzIDQwOC43OTggMjk3Ljc5OSA0MTguMTMxIDI5Ny43OTlDNDI3LjQ2NSAyOTcuNzk5IDQzNi43OTggMjk1LjEzMyA0NDYuMTMxIDI4OS43OTlDNDU1LjQ2NSAyODQuNDY2IDQ2Mi43OTggMjc3LjEzMyA0NjguMTMxIDI2Ny43OTlDNDczLjQ2NSAyNTguNDY2IDQ3Ni4xMzEgMjQ3Ljc5OSA0NzYuMTMxIDIzNS43OTlaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==" alt="Immortal Dark Slayer Game Preview" class="w-full h-auto rounded-2xl">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
-                    </div>
-                </div>
-            </div>
+    <section class="py-12 md:py-20 px-4 bg-gradient-to-b from-black to-apple-black text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Experience Epic Dark Fantasy Combat</h2>
+            <p class="text-lg md:text-xl mb-8">Unleash powerful abilities, defeat terrifying enemies, and become the legendary Immortal Dark Slayer.</p>
+            <a href="#game" class="bg-apple-blue hover:bg-apple-darkblue transition px-8 py-3 rounded-full text-white font-bold text-lg inline-block">Play Now</a>
         </div>
     </section>
 
     <!-- Game Section -->
-    <section id="game" class="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-black">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Play Immortal Dark Slayer Now</h2>
-            <div class="game-container">
+    <section id="game" class="section-padding py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Play Immortal Dark Slayer</h2>
+            <div class="game-container shadow-xl rounded-lg overflow-hidden">
                 <iframe src="https://www.crazygames.com/embed/immortal-dark-slayer" frameborder="0" allow="gamepad *;"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-black to-gray-900">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Epic Game Features</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Immersive Gameplay</h2>
-                    <p class="text-gray-300">Experience fluid combat mechanics and stunning visual effects in a richly detailed dark fantasy world.</p>
-                </div>
-                
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Character Progression</h2>
-                    <p class="text-gray-300">Upgrade your skills, collect powerful weapons, and unlock devastating abilities as you grow stronger.</p>
-                </div>
-                
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Epic Boss Battles</h2>
-                    <p class="text-gray-300">Face off against terrifying demons and undead lords in challenging, strategic boss encounters.</p>
-                </div>
-                
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Vast Open World</h2>
-                    <p class="text-gray-300">Explore diverse landscapes from haunted forests to ancient ruins filled with secrets and treasures.</p>
-                </div>
-                
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Customizable Loadouts</h2>
-                    <p class="text-gray-300">Create your unique combat style with different weapon combinations and magical abilities.</p>
-                </div>
-                
-                <div class="feature-card p-6">
-                    <div class="mb-4 text-apple-blue">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                        </svg>
-                    </div>
-                    <h2 class="text-xl font-bold mb-2">Epic Storyline</h2>
-                    <p class="text-gray-300">Uncover a compelling narrative of betrayal, redemption, and the eternal battle between light and darkness.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-gray-900">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About The Game</h2>
-            
-            <div class="bg-black bg-opacity-50 p-6 md:p-8 rounded-xl max-w-4xl mx-auto">
-                <p class="text-lg mb-6">
-                    In Immortal Dark Slayer, you play as an ancient warrior blessed with immortality, tasked with cleansing the realm of demonic corruption. Wield legendary weapons and harness arcane powers to battle through hordes of enemies and confront the lords of darkness.
-                </p>
-                
-                <p class="text-lg mb-6">
-                    Set in a vast dark fantasy world, you'll explore crumbling castles, treacherous mountain passes, and corrupted villages as you uncover the truth behind the demonic invasion and your own mysterious past.
-                </p>
-                
-                <h2 class="text-xl font-bold mt-8 mb-4">Game Controls</h2>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">WASD</span>
-                        <span>Move character</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">SPACE</span>
-                        <span>Jump</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">LMB</span>
-                        <span>Light attack</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">RMB</span>
-                        <span>Heavy attack</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">SHIFT</span>
-                        <span>Dodge/Roll</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">E</span>
-                        <span>Interact</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">Q</span>
-                        <span>Use potion</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="bg-apple-blue text-white text-xs font-bold px-2 py-1 rounded mr-3">1-4</span>
-                        <span>Special abilities</span>
-                    </li>
-                </ul>
+    <section id="about" class="section-padding py-12 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">About The Game</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4">Immortal Dark Slayer is an action-packed RPG set in a world consumed by darkness. As the last of the legendary Slayers, you must harness ancient powers to defeat the forces of evil and restore balance to the realm.</p>
+                    <p class="mb-4">Navigate through challenging dungeons, engage in epic boss battles, and unlock powerful abilities as you progress through your journey. Will you succumb to the darkness or rise as the ultimate Slayer?</p>
+                    <p>The fate of the world rests in your hands. Are you ready to embrace your destiny?</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Game Overview</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">✓</span>
+                            <span>Genre: Action RPG with dark fantasy elements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">✓</span>
+                            <span>Controls: Keyboard for movement, mouse for combat</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">✓</span>
+                            <span>Difficulty: Challenging but rewarding gameplay</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">✓</span>
+                            <span>Play Time: 10+ hours of main campaign content</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">✓</span>
+                            <span>Updates: Regular content additions and balancing</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-12 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-900 to-black">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Quest?</h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Challenge the darkness, upgrade your skills, and become the legendary Immortal Dark Slayer.
-            </p>
-            <a href="#game" class="button-primary text-lg">
-                Play Now
-            </a>
+    <!-- Features Section -->
+    <section id="features" class="section-padding py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Game Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Epic Combat System</h2>
+                    <p>Master a variety of weapons and special abilities to defeat increasingly challenging enemies. Combine attacks for devastating combos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Character Progression</h2>
+                    <p>Level up your character, unlock new skills, and customize your playstyle with different abilities and equipment.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Immersive World</h2>
+                    <p>Explore a dark fantasy realm filled with secrets, lore, and challenging dungeons waiting to be conquered.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Boss Battles</h2>
+                    <p>Test your skills against epic bosses that require strategy and quick reflexes to defeat. Each boss has unique patterns and weaknesses.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Collectible Items</h2>
+                    <p>Discover rare weapons, armor, and artifacts that enhance your abilities and help you overcome the toughest challenges.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3 text-apple-blue">Engaging Storyline</h2>
+                    <p>Experience a compelling narrative that unfolds as you progress, revealing the dark secrets behind the world's corruption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section class="section-padding py-12 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">How to Play</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Controls</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <span class="font-bold mr-2 w-16 inline-block">WASD:</span>
+                            <span>Move your character</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="font-bold mr-2 w-16 inline-block">Mouse:</span>
+                            <span>Aim and attack</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="font-bold mr-2 w-16 inline-block">Space:</span>
+                            <span>Dodge roll</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="font-bold mr-2 w-16 inline-block">1-4:</span>
+                            <span>Use special abilities</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="font-bold mr-2 w-16 inline-block">E:</span>
+                            <span>Interact with objects</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tips for Beginners</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">•</span>
+                            <span>Learn enemy patterns before engaging in combat</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">•</span>
+                            <span>Use dodge roll to avoid damage and position yourself</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">•</span>
+                            <span>Manage your energy - don't spam special abilities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">•</span>
+                            <span>Explore thoroughly to find hidden items and power-ups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-apple-blue mr-2">•</span>
+                            <span>Upgrade your core abilities before branching out</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 px-4 md:px-8 lg:px-16 bg-black">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMEMxNC40NzcgMCA5LjE5OSAyLjE5MiA1LjYwNyA2LjA5NEMyLjAxNCA5Ljk5NiAwIDE1LjY4NiAwIDIxLjY0NEMwIDI3LjYwMyAyLjAxNCAzMy4yOTIgNS42MDcgMzcuMTk0QzkuMTk5IDQxLjA5NiAxNC40NzcgNDMuMjg4IDIwIDQzLjI4OEMyNS41MjMgNDMuMjg4IDMwLjgwMSA0MS4wOTYgMzQuMzkzIDM3LjE5NEMzNy45ODYgMzMuMjkyIDQwIDI3LjYwMyA0MCAyMS42NDRDNDAgMTUuNjg2IDM3Ljk4NiA5Ljk5NiAzNC4zOTMgNi4wOTRDMzAuODAxIDIuMTkyIDI1LjUyMyAwIDIwIDBaIiBmaWxsPSIjMDA3QUZGIi8+PHBhdGggZD0iTTI2LjY2NyAyMS42NDRMMTMuMzMzIDMwLjMwMlYxMi45ODdMMjYuNjY3IDIxLjY0NFoiIGZpbGw9IndoaXRlIi8+PC9zdmc+" alt="Logo" class="w-8 h-8">
-                        <span class="ml-2 text-lg font-bold text-white">Immortal Dark Slayer</span>
-                    </div>
-                    <p class="mt-2 text-sm text-gray-400">
-                        © 2025 Immortal Dark Slayer. All rights reserved.
-                    </p>
+    <footer class="bg-apple-black text-white py-8 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Immortal Dark Slayer</h3>
+                    <p class="text-sm text-gray-400">An epic action RPG where darkness meets destiny. Embark on a journey to become the legendary Immortal Dark Slayer.</p>
                 </div>
-                
-                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                    <a href="#game" class="text-gray-400 hover:text-white transition">Play Now</a>
-                    <a href="#features" class="text-gray-400 hover:text-white transition">Features</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#game" class="hover:text-apple-blue transition">Play Game</a></li>
+                        <li><a href="#about" class="hover:text-apple-blue transition">About</a></li>
+                        <li><a href="#features" class="hover:text-apple-blue transition">Features</a></li>
+                    </ul>
                 </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-apple-blue transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-apple-blue transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Immortal Dark Slayer. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple navigation scroll functionality
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Script to hide CrazyGames elements
+        window.addEventListener('load', function() {
+            const gameFrame = document.querySelector('iframe');
+            
+            // Create a style element to inject CSS that hides CrazyGames elements
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .crazygames-logo-container, 
+                .crazygames-button,
+                [data-cy="play-on-cg"] {
+                    display: none !important;
+                    visibility: hidden !important;
+                    opacity: 0 !important;
+                    pointer-events: none !important;
+                }
+            `;
+            
+            // Try to access iframe content and hide elements
+            try {
+                // Wait for iframe to load
+                gameFrame.onload = function() {
+                    try {
+                        // Try to access iframe document and append style
+                        const iframeDocument = gameFrame.contentDocument || gameFrame.contentWindow.document;
+                        iframeDocument.head.appendChild(style);
+                        
+                        // Monitor for changes in the iframe to hide elements that might appear later
+                        const observer = new MutationObserver(function(mutations) {
+                            const elements = iframeDocument.querySelectorAll('.crazygames-logo-container, .crazygames-button, [data-cy="play-on-cg"]');
+                            elements.forEach(el => {
+                                el.style.display = 'none';
+                                el.style.visibility = 'hidden';
+                                el.style.opacity = '0';
+                                el.style.pointerEvents = 'none';
+                            });
+                        });
+                        
+                        observer.observe(iframeDocument.body, {
+                            childList: true,
+                            subtree: true
+                        });
+                    } catch (e) {
+                        console.log('Cannot access iframe content due to same-origin policy');
+                    }
+                };
+            } catch (e) {
+                console.log('Error accessing iframe:', e);
+            }
         });
-        
-        // Simple mobile menu toggle
-        const mobileMenuButton = document.querySelector('button.md\\:hidden');
-        mobileMenuButton.addEventListener('click', function() {
-            // This would normally toggle a mobile menu, but we're keeping it simple for this example
-            alert('Mobile menu would open here');
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
 </body>
